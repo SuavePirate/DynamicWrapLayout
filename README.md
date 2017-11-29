@@ -87,3 +87,4 @@ This does not use any native view virtualization, which means performance does n
 ## Coming soon
 
 - `ItemSelected` event and `SelectedItem` bindable property (for now, you can add custom gestures and commands to your `DataTemplate` and handle the events yourself)
+- Better Collection Updating
