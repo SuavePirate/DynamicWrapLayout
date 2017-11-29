@@ -325,6 +325,9 @@ namespace SuaveControls.DynamicWrapLayout
         /// </summary>
         private void CreateCells()
         {
+            // clear them before we add them to avoid duplications in the lifecycle from caching.
+            Children.Clear();
+
             foreach (var item in ItemsSource)
             {
                 Children.Add(CreateCellView(item));
