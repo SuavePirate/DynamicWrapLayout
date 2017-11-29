@@ -43,7 +43,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SuaveControls\SuaveControls.csproj">
+    <ProjectReference Include="..\SuaveControls\SuaveControls.DynamicWrapLayout.csproj">
       <Project>{1E1749E5-7858-4656-A13B-890E9C5BFFF8}</Project>
       <Name>SuaveControls.DynamicWrapLayout</Name>
     </ProjectReference>
