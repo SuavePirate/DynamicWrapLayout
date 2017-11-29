@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace SuaveControls
+namespace SuaveControls.DynamicWrapLayout
 {
     /// <summary>
     /// Layout data.

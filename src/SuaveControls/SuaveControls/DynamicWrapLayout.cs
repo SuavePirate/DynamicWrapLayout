@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 
-namespace SuaveControls
+namespace SuaveControls.DynamicWrapLayout
 {
     /// <summary>
     /// Dynamic wrap layout. Used for creating a data bound list of items and templates

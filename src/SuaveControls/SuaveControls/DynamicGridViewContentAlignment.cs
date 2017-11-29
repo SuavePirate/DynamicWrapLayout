@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SuaveControls
+namespace SuaveControls.DynamicWrapLayout
 {
     /// <summary>
     /// Dynamic grid view content alignment.

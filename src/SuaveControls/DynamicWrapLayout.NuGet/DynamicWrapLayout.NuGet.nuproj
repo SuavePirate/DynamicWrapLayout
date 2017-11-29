@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79CB6EAF-EF7D-4C7A-A381-A4F490F15A72}</ProjectGuid>
+    <Description>A Xamarin.Forms layout to bind data to a wrapped data. Allows for observable child views and auto updating layouts.</Description>
+    <PackageId>DynamicWrapLayout</PackageId>
+    <PackageVersion>2017.11.30</PackageVersion>
+    <Authors>SuavePirate</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DynamicWrapLayout.NuGet</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>DynamicWrapLayout.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>SuavePirate</Owners>
+    <PackageTags>Xamarin Xamarin.Forms Grid Wrap Dynamic</PackageTags>
+    <Title>DynamicWrapLayout</Title>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <Summary>A Xamarin.Forms layout for binding data to a grid</Summary>
+    <PackageProjectUrl>https://github.com/SuavePirate/DynamicWrapLayout</PackageProjectUrl>
+    <PackageIconUrl>https://i0.wp.com/alexdunndev.files.wordpress.com/2017/11/xamagonwraplayout.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/SuavePirate/DynamicWrapLayout/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.1</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SuaveControls\SuaveControls.csproj">
+      <Project>{1E1749E5-7858-4656-A13B-890E9C5BFFF8}</Project>
+      <Name>SuaveControls.DynamicWrapLayout</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
