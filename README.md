@@ -3,7 +3,7 @@ A Xamarin.Forms layout for creating dynamically wrapped views. Inspired by the `
 
 ## Installation
 
-It's on NuGet!
+It's on NuGet! https://www.nuget.org/packages/DynamicWrapLayout/2017.11.30
 ```
 Install-Package DynamicWrapLayout
 ```
