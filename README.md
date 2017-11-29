@@ -40,6 +40,7 @@ Use it in your View:
 
 Don't like data-binding and want to just use child views? You can do that too!
 
+```
 <ScrollView>
     <suave:DynamicWrapLayout HorizontalOptions="Fill">
       <StackLayout BackgroundColor="Gray" WidthRequest="120" HeightRequest="180">
@@ -59,7 +60,7 @@ Don't like data-binding and want to just use child views? You can do that too!
       </StackLayout>
     </suave:DynamicWrapLayout>
 </ScrollView>
-
+```
 ## Features
 
 - Bindable child views
